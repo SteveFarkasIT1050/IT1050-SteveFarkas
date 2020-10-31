@@ -1,0 +1,7 @@
+C:\Users\farka\source\repos\IT1050-SteveFarkas\ConsoleAppLab2\ConsoleAppLab2\bin\Debug\ConsoleAppLab2.exe.config
+C:\Users\farka\source\repos\IT1050-SteveFarkas\ConsoleAppLab2\ConsoleAppLab2\bin\Debug\ConsoleAppLab2.exe
+C:\Users\farka\source\repos\IT1050-SteveFarkas\ConsoleAppLab2\ConsoleAppLab2\bin\Debug\ConsoleAppLab2.pdb
+C:\Users\farka\source\repos\IT1050-SteveFarkas\ConsoleAppLab2\ConsoleAppLab2\obj\Debug\ConsoleAppLab2.csprojAssemblyReference.cache
+C:\Users\farka\source\repos\IT1050-SteveFarkas\ConsoleAppLab2\ConsoleAppLab2\obj\Debug\ConsoleAppLab2.csproj.CoreCompileInputs.cache
+C:\Users\farka\source\repos\IT1050-SteveFarkas\ConsoleAppLab2\ConsoleAppLab2\obj\Debug\ConsoleAppLab2.exe
+C:\Users\farka\source\repos\IT1050-SteveFarkas\ConsoleAppLab2\ConsoleAppLab2\obj\Debug\ConsoleAppLab2.pdb
