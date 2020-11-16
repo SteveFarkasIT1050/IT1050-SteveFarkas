@@ -1,159 +1,149 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.ExceptionServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab3
+namespace Lab4
+
+    // 2. The four basic elements of the counter controlled repetition are: The control variable which is responsible for regulating control flow of a certain program, the control variable's initial value which sets the beginning value of the control variable, the increment of the control variable that will be applied for each iteration of the loop and finally the loop-continuation condition which is responsible for determining if the looping should continue to proceed.  
+    // 3. The for repetition statement is specifically used to define the elements of counter-controlled iteration within a single line of code.  These for statements are typically used for counter-controlled iteration but can also be utilized for sentiel-controlled iteration as compared to its counterpart the while repetition statement.  The while statement although primarily used for sentinel-controlled iteration can actually be used as well for counter-controlled iteration making both these statements ideal for either iteration.  
+    // 4. It would be more appropriate to implement a do while statement in the example of creating a program that outputs values from 1-10 than it would be to use a while statement.  This is the case because although they are similiar, the do while statement will test the loop-continuation condition after executing the loop's body verifying that the body will always execute at least once.  Its counterpart, the while statement will test the same loop-continuation condition rather at the beginning of the loop before execution of the loop's body were to occur.  The body will never execute if the condition is false under the while statement however under the do while statement when termination has occurred, execution will continue onward with the statements further along in the sequence making this option more beneficial especially for a numerical sequence.    
 {
-    // Main method begins execution of C# app 
     class Program
     {
         static void Main(string[] args)
         {
-            int speedLimit;
-            int speed;
+            // for statement header includes initialization 
+            // loop-continuation condition and increment 
+            for (int i = 1; i <= 100; i++) 
+            {
+                Console.WriteLine(i);
+                {
+                    if ((i % 2) == 0)
+                    {
+                        Console.WriteLine("Number is even");
+                    }
 
-             speedLimit = 35;
-             speed = 42;
+                    else if ((i % 2) != 0)
+                    {
+                        Console.WriteLine("Number is odd");
+                    }
+                    }
 
-            if (speed >= speedLimit)
+                }
+               
+               
+            }
+
             
-                Console.WriteLine("SLOW DOWN");
-            
+        
         }
     }
-}
 
-// Boolean Program Expression (4.)
 
+
+
+
+  
 class Program2
 {
-
-}
-
-    bool isTrue = true;
-    if (!isTrue)
+    static void Main1(string[] args)
     {
-        Console.WriteLine("It is True!");
-    }
-    else
-    {
-        Console.WriteLine("It is False!");
+        Console.WriteLine("Please enter a temperature.");
 
-    }
+        int temp;
+        temp = Convert.ToInt32(Console.ReadLine());
 
-// 5. If Statement Program (Temperature)
+        if (temp < 10)
+        {
+            Console.WriteLine("Polar Bear");
+        }
 
-namespace Temps
-{
+
+        else if (temp < 20)
+        {
+            Console.WriteLine("Penguin");
+        }
+
+        else if (temp < 40)
+        {
+            Console.WriteLine("Moose");
+        }
+
+        else if (temp < 50)
+        {
+            Console.WriteLine("Reindeer");
+        }
+
+        else if (temp < 60)
+        {
+            Console.WriteLine("Deer");
+        }
+
+        else if (temp < 70)
+        {
+            Console.WriteLine("Turtle");
+        }
+
+        else if (temp < 80)
+        {
+            Console.WriteLine("Lion");
+        }
+
+        else if (temp < 90)
+        {
+            Console.WriteLine("Fish");
+        }
+
+        else if (temp == default)
+        {
+            Console.WriteLine("Bug");
+        }
+        }
+        }
+        
+
+
+
+
+
     class Program3
     {
-        static void Main(string[] args)
+        static void Main2(string[]args)
         {
 
-            Console.WriteLine("Enter the temperature in F to be converted to C");
-
-            double fahrenheit = Convert.ToDouble(Console.ReadLine());
-            double celsius = (fahrenheit - 32) * 5 / 9;
-            Console.WriteLine($"C is {celsius}");
-
-            if (fahrenheit < 40)
+            int i = 10;
             {
-                Console.WriteLine("It is cold!");
+                while (i < 21)
+                {
+
+                    Console.WriteLine(i++);
+                }
             }
-            if (fahrenheit > 90)
+        }
+    }
+
+
+
+
+
+
+
+    class Program4
+    {
+
+        static void Main3(string[]args)
+        {
+
+            for(int i = 0; i < 101; i++)
             {
-                Console.WriteLine("It is hot!");
+                Console.WriteLine(i);
+                Console.WriteLine("********");
+
             }
-
-        }
-
-    }
-}
-
-/// While loop (values 10-20, Increment by 2) 
-
-
-class Program4
-{
-    static void Main(string[] args)
-    {
-        int counter = 10;
-
-        do
-        {
-            Console.WriteLine($"{counter}");
-            counter = counter + 2;
-        }
-        while (counter <= 20);
-    }
-}
-
-/// While loop (values 60-20, Decrement by 5)
-
-
-class Program5
-{
-    static void Main(string[] args)
-    {
-        int i = 60; // First value of integer i 
-        while (i >= 20)
-        {
-            Console.WriteLine(i);
-            i--;
         }
     }
-}
 
-
-/// While loop (values 1-10, Increment by 1) 
-
-class Program6
-{
-    static void Main(string[] args)
-    {
-        int i = 1; // first value of integer i 
-        while (i <= 10)
-        {
-            Console.WriteLine(i);
-            i++;
-        }
-    }
-} 
-
-
-
-
-// 2. An if single-selection statement is characterized by selecting or ignoring a single action depending on if the condition is true (select) or false (ignore).  
-// (Continued...) A while-repetition statement is defined by its tendency to loop (iterating) while its pre-determined condition remains true between braces that delimit its body.  
-// (Continued...) They are both similar in regards to obeying their defined conditions taking into account the input from the user declares the statment true or eventually terminates when proven false.  
-// (Continued...) The difference between the two statements is that our single selection statement will execute the true aspect of the statement and if proven false will eventually skip it however our while statement will continue to execute the code until all determined conditions have been met.   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
